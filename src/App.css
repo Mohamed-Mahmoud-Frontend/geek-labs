@@ -23,9 +23,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-    margin-top: 10px;
+    margin-top: 5px;
     background: #222;
-    height: 100vh;
+    height: 100%;
     position: relative;
     width: 350px;
 }
@@ -112,3 +112,4 @@ align-items: center;
 .profile p {
     display: none;
 }
+
