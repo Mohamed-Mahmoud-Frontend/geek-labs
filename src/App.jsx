@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className='h-screen w-full p-1  '>
-<div className='flex justify-between gap-2'>
+<div className='flex justify-between gap-2 max-md:flex-col'>
 <div>
 <SideBar/>
 </div>

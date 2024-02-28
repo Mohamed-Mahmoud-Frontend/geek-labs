@@ -96,37 +96,37 @@ const toggleDetails = (stock) => {
   };
 
   return (
-    <div className="header w-[100%] mt-10 ml-10 flex flex-col items-center  p-3  justify-center ">
+    <div className="header w-full max-md:w-screen mt-10 ml-10 max-md:ml-1 flex flex-col items-center max-md:p-0hg  p-3  justify-center ">
     {stocks.map((stock) => (
       <div key={stock.id} className={`flex w-full mt-4 flex-col  rounded bg-[#222] `}>
 
       <div  className={`flex w-full p-3 rounded ${showDetails && selectedStocks.includes(stock.id) ? 'bg-[#53ACFF]' : 'bg-[#222]'}`}>
-      <div className="flex items-center cursor-pointer justify-between w-[25%] border-r pr-4">
+      <div className="flex items-center cursor-pointer justify-between w-[25%]  border-r pr-4">
             <span
-              className="flex gap-3 font-medium text-lg w-full justify-evenly text-white"
+              className="flex gap-3 font-medium text-lg max-md:text-[12px] max-md:font-light   w-full justify-evenly max-md:p- text-white"
               onClick={() => toggleDetails(stock)}
             >
-              <img src={stock.icon} alt="" />
-              <span>{stock.name}</span>
+              <img  className="max-md:w-5" src={stock.icon} alt="" />
+              <span className="">{stock.name}</span>
             </span>
           </div>
 
-          <div className="flex items-center cursor-pointer justify-between w-[25%] border-r pr-4">
+          <div className="flex items-center cursor-pointer justify-between w-[25%]  border-r pr-4">
             <span
-              className="flex gap-3 font-medium text-lg w-full justify-evenly text-white"
+              className="flex gap-3 font-medium text-lg max-md:text-[12px] max-md:font-light w-full justify-evenly  text-white"
               onClick={() => toggleDetails(stock)}
             >
-              <img src={stock.icon2} alt="" />
-              <span>{stock.value}</span>
+              <img  className="max-md:w-5" src={stock.icon2} alt="" />
+              <span className="">{stock.value}</span>
             </span>
           </div>
 
-          <div className="flex items-center cursor-pointer justify-between w-[25%] border-r pr-4">
+          <div className="flex items-center cursor-pointer justify-between w-[25%]  border-r pr-4">
             <span
-              className="flex gap-3 font-medium text-lg w-full justify-evenly text-white"
+              className="flex gap-3 font-medium text-lg max-md:text-[12px] max-md:font-light w-full justify-evenly max-md:p- text-white"
               onClick={() => toggleDetails(stock)}
             >
-              <img src={stock.icon3} alt="" />
+              <img  className="max-md:w-5" src={stock.icon3} alt="" />
               {stock.change === "-0.25 %" ? (
                 <span className="text-[#D94111]">{stock.change}</span>
               ) : (
@@ -135,13 +135,13 @@ const toggleDetails = (stock) => {
             </span>
           </div>
 
-          <div className="flex items-center cursor-pointer justify-between w-[25%]  ">
+          <div className="flex items-center cursor-pointer justify-between w-[25%]   ">
             <span
-              className="flex gap-3 font-medium text-lg w-full justify-evenly text-white"
+              className="flex gap-3 font-medium text-lg max-md:text-[12px] max-md:font-light w-full justify-evenly max-md:p- text-white"
               onClick={() => toggleDetails(stock)}
             >
-              <img src={stock.icon4} alt="" />
-              <span>{stock.risk}</span>
+              <img  className="max-md:w-5" src={stock.icon4} alt="" />
+              <span className="">{stock.risk}</span>
             </span>
           </div>
         </div>

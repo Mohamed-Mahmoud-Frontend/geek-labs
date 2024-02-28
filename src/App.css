@@ -44,7 +44,21 @@ align-items: center;
     transition: 0.5s;
     overflow: hidden;
 }
-
+@media (max-width :767px) {
+.sideBar{
+width: 25px;
+}
+.home
+{
+    width: 100% ;
+    margin-left: 0px !important;
+    padding: 10px;
+}
+.filter{
+    width: 100%;
+    padding: 10px;
+}
+}
 
 
 

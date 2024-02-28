@@ -6,7 +6,7 @@ const Home = () => {
 
 
   return (
-    <div className="home">
+    <div className="home max-md:w-full max-md:m-0">
       <HeaderHome />
 
 <MainHome/>
