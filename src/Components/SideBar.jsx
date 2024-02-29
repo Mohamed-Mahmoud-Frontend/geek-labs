@@ -6,6 +6,7 @@ import icons4 from '../assets/Group 99.png'
 import icons5 from '../assets/Group 98.png'
 import icons6 from '../assets/Group 101.png'
 const SideBar = () => {
+
   return (
     <div className="sideBar ">
     <div className='logo' >
@@ -13,29 +14,34 @@ const SideBar = () => {
     </div>
 <div className='flex flex-col justify-between h-screen'>
     <div className='groupIcon'>
-    <div className='icons'>
-    <img  src={icons1} alt="" />
-    <p>Alert</p>
+    <div className='icons hover:text-[#53ACFF]'>
+    <img className='' src={icons1} alt="" />
+    <p  className='text-gray-50 hover:text-[#53ACFF] '>Alert</p>
 
     </div>
     <div className='icons'>
     <img  src={icons2} alt="" />
-    <p>Training</p>
+    <p  className='text-gray-50  hover:text-[#53ACFF] '>Training</p>
 
     </div>
-    <div className='icons'>
-    <img  src={icons3} alt="" />
-    <p>Automation</p>
+    <div className='icons iconsHover  '>
+
+        <img src={icons3} alt=""  />
+        <p className='text-gray-400 '>Automation</p>
 
     </div>
-    <div className='icons'>
+
+
+
+
+    <div className='icons iconsHover'>
     <img  src={icons4} alt="" />
-    <p>Portfolio</p>
+    <p className='text-gray-400'>Portfolio</p>
 
     </div>
-    <div className='icons'>
+    <div className='icons iconsHover'>
     <img  src={icons5} alt="" />
-    <p>Trading</p>
+    <p className='text-gray-400'>Trading</p>
 
     </div>
     </div>
