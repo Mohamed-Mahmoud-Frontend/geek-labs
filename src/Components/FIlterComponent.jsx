@@ -209,7 +209,7 @@ const FIlterComponent = () => {
       </div>
 
       <div className="flex mt-3 items-center justify-between p-4 w-full text-[#888]">
-        <div>
+        <div className="">
           <h3 className="text-white mb-2">strategy</h3>
           <div className="text-sm flex flex-col items-center justify-center ">
             <p>Big Option Buys</p>

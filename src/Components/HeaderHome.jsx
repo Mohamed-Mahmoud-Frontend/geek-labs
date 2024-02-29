@@ -4,13 +4,13 @@ import search from '../assets/search.svg';
 
 const HeaderHome = () => {
   return (
-    <div className="header mt-3 w-full mx-4 md:mx-10 flex items-center justify-between">
+    <div className="header mt-3 w-full mx-4 md:m-0 flex items-center justify-between">
       <div className='flex items-center gap-3'>
         <img src={line} alt="" className="hidden md:block" />
         <h2 className='text-2xl md:text-5xl text-white font-bold' >ALERTS</h2>
       </div>
 
-      <div className='w-full md:w-[70%] flex gap-2'>
+      <div className='w-3/4 max-md:w-3/4  flex gap-2'>
         <div className='w-full relative'>
           <input
             type="text"
@@ -19,7 +19,7 @@ const HeaderHome = () => {
           />
           <img src={search} alt="" className='absolute right-[10px] top-[20%]' />
         </div>
-        <img src={pall} alt="" className='hidden md:block' />
+        <img src={pall} alt="" className=' md:block' />
       </div>
     </div>
   );
