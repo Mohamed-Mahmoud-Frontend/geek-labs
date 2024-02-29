@@ -5,9 +5,9 @@ import search from '../assets/search.svg';
 const HeaderHome = () => {
   return (
     <div className="header mt-3 w-full mx-4 md:m-0 flex items-center justify-between">
-      <div className='flex items-center gap-3'>
-        <img src={line} alt="" className="hidden md:block" />
-        <h2 className='text-2xl md:text-5xl text-white font-bold' >ALERTS</h2>
+      <div className='flex items-center gap-3 max-md:gap-1'>
+        <img src={line} alt="" className="max-md:w-1 " />
+        <h2 className='text-5xl max-md:text-xl text-white font-bold max-md:' >ALERTS</h2>
       </div>
 
       <div className='w-3/4 max-md:w-3/4  flex gap-2'>
@@ -19,7 +19,9 @@ const HeaderHome = () => {
           />
           <img src={search} alt="" className='absolute right-[10px] top-[20%]' />
         </div>
-        <img src={pall} alt="" className=' md:block' />
+
+        <img src={pall} alt="" className='max-md:w-10 ' />
+
       </div>
     </div>
   );
