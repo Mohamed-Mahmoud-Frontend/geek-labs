@@ -10,7 +10,7 @@ import { useState } from 'react'
 const SideBar = () => {
 const [hide, setHide] = useState(true);
 const handleHidden= ()=> {
-  setHide(!hide)
+  setHide(!hidegit)
 }
   return (
     <div className=" ">
