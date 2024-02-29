@@ -4,13 +4,24 @@ import icons2 from '../assets/Group 95.svg'
 import icons3 from '../assets/Group 97.png'
 import icons4 from '../assets/Group 99.png'
 import icons5 from '../assets/Group 98.png'
+import menu from '../assets/menu.svg'
 import icons6 from '../assets/Group 101.png'
+import { useState } from 'react'
 const SideBar = () => {
-
+const [hide, setHide] = useState(true);
+const handleHidden= ()=> {
+  setHide(!hide)
+}
   return (
-    <div className="sideBar ">
-    <div className='logo' >
-    <img width="60px" src={logo} alt="" />
+    <div className=" ">
+    <div className='max-lg:hidden max-md:block' onClick={handleHidden}>
+<img src={menu} className='w-5 absolute top-10 ' alt="" />
+    </div>
+
+    <div className={`sideBar max-md:${hide ? 'hidden' : 'block'}`}>
+    <div className='logo'  >
+
+    <img width="60px" src={logo} alt=""  onClick={handleHidden}/>
     </div>
 <div className='flex flex-col justify-between h-screen'>
     <div className='groupIcon'>
@@ -58,6 +69,7 @@ const SideBar = () => {
 <div className=''>
 <p className='text-gray-700'>street suite. 2.0</p>
 </div>
+    </div>
     </div>
     </div>
     </div>

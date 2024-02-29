@@ -17,7 +17,7 @@ const MainHome = () => {
         icon3: third,
         icon4: four,
         value: "200",
-        change: "-0.25 %",
+        change: "0.25 %",
         risk: "Low Risk",
         additionalInfo: "AMZN ipsum dxxxxxxxxxxxxolor sit amet, consectetur adipiscing elit.",
       },
@@ -84,6 +84,8 @@ const MainHome = () => {
         risk: "High Risk",
         additionalInfo: "ABQQ ipsum dolor sit amet, consectetur adipiscing elit TSLA ipsum dolor wwwsit amet, consectetur adipiscing elit. TSLA ipsum dolor wwwsit amet, consectetur adipiscing elit.. ",
       },
+
+
     ];
 
 
@@ -96,11 +98,11 @@ const toggleDetails = (stock) => {
   };
 
   return (
-    <div className="header w-full max-md:w-screen mt-10 ml-10 max-md:ml-1 flex flex-col items-center max-md:p-0hg  p-3  justify-center ">
+    <div className=" w-full max-md:w-full max-md:h-96  max-md:overflow-y-scroll mt-10  ml-10 max-md:ml-0 flex flex-col items-center max-md:p-0  p-3  justify-center ">
     {stocks.map((stock) => (
-      <div key={stock.id} className={`flex w-full mt-4 flex-col  rounded bg-[#222] `}>
+      <div key={stock.id} className={`flex w-screen mt-4 flex-col max-md:mr-[5px]  rounded-md bg-[#222] `}>
 
-      <div  className={`flex w-full p-3 rounded ${showDetails && selectedStocks.includes(stock.id) ? 'bg-[#53ACFF]' : 'bg-[#222]'}`}>
+      <div  className={`flex w-full p-3 max-md:p-2 rounded ${showDetails && selectedStocks.includes(stock.id) ? 'bg-[#53ACFF]' : 'bg-[#222]'}`}>
       <div className="flex items-center cursor-pointer justify-between w-[25%]  border-r pr-4">
             <span
               className="flex gap-3 font-medium text-lg max-md:text-[12px] max-md:font-light   w-full justify-evenly max-md:p- text-white"
