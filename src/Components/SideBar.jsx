@@ -10,7 +10,7 @@ import { useState } from 'react'
 const SideBar = () => {
 const [hide, setHide] = useState(true);
 const handleHidden= ()=> {
-  setHide(!hidegit)
+  setHide(!hide)
 }
   return (
     <div className=" ">
@@ -18,7 +18,7 @@ const handleHidden= ()=> {
 <img src={menu} className='w-5 absolute top-10 ' alt="" />
     </div>
 
-    <div className={`sideBar max-md:${hide ? 'hidden' : 'block'}`}>
+    <div className={`sideBar max-md:${hide ? 'block' : 'hidden'}`}>
     <div className='logo'  >
 
     <img width="60px" src={logo} alt=""  onClick={handleHidden}/>
